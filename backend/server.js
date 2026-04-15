@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 
 const authRoutes = require('./routes/auth');
 const postRoutes = require('./routes/posts');
@@ -8,6 +9,8 @@ const likeRoutes = require('./routes/likes');
 const userRoutes = require('./routes/users');
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
