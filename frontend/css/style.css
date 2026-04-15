@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+a {
+    color: #7c6af7;
+    text-decoration: none;
+}
+
+
+
+
+nav {
+    background-color: #1a1a2e;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #2e2e4e;
+}
+
+nav .logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #7c6af7;
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+nav .nav-links a {
+    color: #e0e0e0;
+    font-size: 0.95rem;
+}
+
+nav .nav-links button {
+    background: none;
+    border: 1px solid #7c6af7;
+    color: #7c6af7;
+    padding: 6px 16px;
+
+
+    font-size: 0.95rem;
+}
+
+
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+
+.card {
+    background-color: #1a1a2e;
+    border: 1px solid #2e2e4e;
+
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+
+
+
+
+
+.btn {
+    background-color: #7c6af7;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+
+
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #6a59e0;
+}
+
+.btn-small {
+    width: auto;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+}
+
+/* ERROR */
+.error {
+    color: #f87171;
+    font-size: 0.85rem;
+    margin-top: 8px;
+}
+
+/* POST */
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+
+    background-color: #7c6af7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+
+}
+
+.post-meta {
+    font-size: 0.82rem;
+    color: #888;
+    margin-top: 2px;
+}
+
+.post-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.post-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.post-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 14px;
+    align-items: center;
+}
+
+.like-btn {
+    background: none;
+    border: 1px solid #2e2e4e;
+    color: #aaa;
+    padding: 5px 14px;
+
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.like-btn:hover {
+    border-color: #7c6af7;
+    color: #7c6af7;
+}
+
+.like-btn.liked {
+    border-color: #7c6af7;
+    color: #7c6af7;
+}
+
+.likes-count {
+
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.likes-list {
+    display: none;
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #0f0f0f;
+
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* COMMENTS */
+.comments-section {
+    margin-top: 16px;
+    border-top: 1px solid #2e2e4e;
+    padding-top: 16px;
+}
+
+.comment {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.comment-body {
+    background-color: #0f0f0f;
+
+    padding: 8px 12px;
+    flex: 1;
+}
+
+.comment-author {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #7c6af7;
+}
+
+.comment-date {
+    font-size: 0.78rem;
+    color: #666;
+    margin-left: 8px;
+}
+
+.comment-text {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 4px;
+}
+
+.comment-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.comment-form input {
+    flex: 1;
+    background-color: #0f0f0f;
+    border: 1px solid #2e2e4e;
+
+    padding: 8px 12px;
+    color: #e0e0e0;
+
+    outline: none;
+}
+
+.comment-form input:focus {
+    border-color: #7c6af7;
+}
+
+/* USERS LIST */
+.user-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid #2e2e4e;
+}
+
+.user-item:last-child {
+    border-bottom: none;
+}
+
+.user-info .name {
+    font-weight: 600;
+}
+
+.user-info .meta {
+
+    color: #888;
+}
+
+/* AUTH PAGES */
+.auth-container {
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 0 16px;
+}
+
+.auth-container h1 {
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 1.6rem;
+    color: #7c6af7;
+}
+
+.auth-container .link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 16px;
+
+
+}
+
